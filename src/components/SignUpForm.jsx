@@ -36,13 +36,16 @@ export default function SignUpForm({ setToken }) {
             onChange={(e) => setUsername(e.target.value)}
           />
         </label>
+        <br />
         <label>
-          Password:{" "}
+          Password (must be at least 8 characters):{" "}
           <input
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            pattern=".{8}"
           />
         </label>
+        <br />
         <button>Submit</button>
       </form>
     </>
