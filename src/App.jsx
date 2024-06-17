@@ -8,8 +8,13 @@ function App() {
 
   return (
     <>
-      <SignUpForm setToken={setToken} />
-      <Authenticate token={token} />
+      <div className="block">
+        <SignUpForm setToken={setToken} />
+      </div>
+      <br />
+      <div className="block">
+        <Authenticate token={token} />
+      </div>
     </>
   );
 }
