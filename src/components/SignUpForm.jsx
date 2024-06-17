@@ -42,6 +42,7 @@ export default function SignUpForm({ setToken }) {
           <input
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            type="password"
             pattern=".{8}"
           />
         </label>
